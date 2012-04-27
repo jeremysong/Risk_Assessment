@@ -18,7 +18,7 @@ public class NetworkPanel extends JPanel{
 		// TODO Auto-generated constructor stub
 		this.setBackground(Color.white);
 		this.setLayout(null);
-		this.setOpaque(false);
+//		this.setOpaque(false);
 
 		
 		JLabel yaxleLabel = new JLabel("Network Risk");

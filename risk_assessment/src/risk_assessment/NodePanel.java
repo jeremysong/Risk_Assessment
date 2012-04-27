@@ -23,7 +23,7 @@ public class NodePanel extends JPanel{
 		// TODO Auto-generated constructor stub
 		this.setLayout(null);
 		this.setBackground(Color.white);
-		this.setOpaque(false);
+//		this.setOpaque(false);
 
 		
 		JLabel yaxleLabel = new JLabel("Risk Value");
