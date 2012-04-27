@@ -16,7 +16,7 @@ public class NetworkPanel extends JPanel{
 	float network[];
 	public NetworkPanel() {
 		// TODO Auto-generated constructor stub
-//		this.setBackground(Color.white);
+		this.setBackground(Color.white);
 		this.setLayout(null);
 		this.setOpaque(false);
 

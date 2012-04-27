@@ -22,7 +22,7 @@ public class NodePanel extends JPanel{
 	public NodePanel() {
 		// TODO Auto-generated constructor stub
 		this.setLayout(null);
-//		this.setBackground(Color.white);
+		this.setBackground(Color.white);
 		this.setOpaque(false);
 
 		
