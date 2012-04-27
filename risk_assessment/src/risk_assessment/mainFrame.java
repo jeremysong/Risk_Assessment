@@ -112,12 +112,12 @@ public class mainFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Assess();
-				np.notPaintPointFlag();
-				netp.notPaintPointFlag();
+				np.setPaintPointFlagTrue();
+				netp.setPaintPointFlagTrue();
 				drawNode();
-				np.notPaintPointFlag();
+//				np.notPaintPointFlag();
 				drawNetwork();
-				netp.notPaintPointFlag();
+//				netp.notPaintPointFlag();
 			}
 		});
 		

@@ -98,4 +98,9 @@ public class NetworkPanel extends JPanel{
 	{
 		paintPointFlag = !paintPointFlag;
 	}
+	
+	void setPaintPointFlagTrue()
+	{
+		paintPointFlag = true;
+	}
 }

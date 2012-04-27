@@ -175,4 +175,9 @@ public class NodePanel extends JPanel{
 	{
 		paintPointFlag = !paintPointFlag;
 	}
+	
+	void setPaintPointFlagTrue()
+	{
+		paintPointFlag = true;
+	}
 }
