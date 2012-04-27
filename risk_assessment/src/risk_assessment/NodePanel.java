@@ -19,6 +19,8 @@ public class NodePanel extends JPanel{
 	float node_4[];
 	float node_5[];
 	
+	boolean paintPointFlag = false;
+	
 	public NodePanel() {
 		// TODO Auto-generated constructor stub
 		this.setLayout(null);
@@ -113,6 +115,11 @@ public class NodePanel extends JPanel{
 		g.drawString("h", x_ori-5, y_ori+14);
 		
 		//depict point
+		if(paintPointFlag == false)
+		{
+			return;
+		}
+		
 		g.setColor(Color.green);
 		for (int i = 0; i < 23; i++) {
 			Point ptFrom = convertNodetoPoint(node_1[i], i);
@@ -162,5 +169,10 @@ public class NodePanel extends JPanel{
 	JPanel getPanel()
 	{
 		return this.getPanel();
+	}
+	
+	void notPaintPointFlag()
+	{
+		paintPointFlag = !paintPointFlag;
 	}
 }

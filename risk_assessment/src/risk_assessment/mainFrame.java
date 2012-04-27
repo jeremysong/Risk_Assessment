@@ -112,8 +112,12 @@ public class mainFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				Assess();
+				np.notPaintPointFlag();
+				netp.notPaintPointFlag();
 				drawNode();
+				np.notPaintPointFlag();
 				drawNetwork();
+				netp.notPaintPointFlag();
 			}
 		});
 		
@@ -379,11 +383,12 @@ public class mainFrame {
 	
 	void drawNode()
 	{
+		
 		np.setNodesValue(node_1, node_2, node_3, node_4, node_5);
 		np.repaint();
 		
-		System.out.println(np.getWidth());
-		System.out.println(np.getHeight());
+//		System.out.println(np.getWidth());
+//		System.out.println(np.getHeight());
 
 	}
 	

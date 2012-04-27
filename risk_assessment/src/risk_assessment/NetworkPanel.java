@@ -14,6 +14,8 @@ public class NetworkPanel extends JPanel{
 	 */
 	private static final long serialVersionUID = 1L;
 	float network[];
+	boolean paintPointFlag = false;
+
 	public NetworkPanel() {
 		// TODO Auto-generated constructor stub
 		this.setBackground(Color.white);
@@ -64,6 +66,11 @@ public class NetworkPanel extends JPanel{
 		}
 		g.drawString("h", x_ori-5, y_ori+14);
 		
+		if(paintPointFlag == false)
+		{
+			return;
+		}
+		
 		for (int i = 0; i < 23; i++) {
 			Point ptFrom = convertNetworkValuetoPoint(network[i], i);
 			Point ptTo = convertNetworkValuetoPoint(network[i+1], i+1);
@@ -85,5 +92,10 @@ public class NetworkPanel extends JPanel{
 	JPanel getPanel()
 	{
 		return this;
+	}
+	
+	void notPaintPointFlag()
+	{
+		paintPointFlag = !paintPointFlag;
 	}
 }

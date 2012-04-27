@@ -11,6 +11,7 @@ public class SubPanel {
 	JTextField SIT = new JTextField();
 	JTextField IMP = new JTextField();
 	JTextField SG = new JTextField();
+		
 	public SubPanel()
 	{
 //		current.setBounds(0, 0, 800, 400);
@@ -69,5 +70,7 @@ public class SubPanel {
 	{
 		return current;
 	}
+	
+	
 	
 }
