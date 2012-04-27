@@ -15,7 +15,7 @@ public class SubPanel {
 	{
 //		current.setBounds(0, 0, 800, 400);
 		current.setLayout(null);
-		current.setOpaque(false);
+		current.setOpaque(true);
 		
 		JLabel node_weight = new JLabel("Node Weight:");
 		node_weight.setBounds(20, 20, 100, 20);
